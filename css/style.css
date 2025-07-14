@@ -1,0 +1,121 @@
+:root {
+  --bg-color: #b1b1b1;
+  --text-color: #f1f1f1;
+  --footer-color: #ff0000;
+  --contact-section-color: #0000ff;
+  --navbar-link: #00ffff;
+  --navbar-hover: #ff0099;
+  --ai-chat-bg: #ff9900;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+nav {
+  background-color: transparent;
+  padding: 1rem 2rem;
+}
+
+nav a {
+  color: var(--navbar-link);
+  text-decoration: none;
+  margin-right: 1.5rem;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: var(--navbar-hover);
+}
+
+/* Footer */
+footer {
+  background-color: var(--footer-color);
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Contact section (prima del footer) */
+.contact-us {
+  background-color: var(--contact-section-color);
+  padding: 2rem;
+  text-align: center;
+  color: white;
+}
+
+.contact-us input,
+.contact-us textarea {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  margin: 1rem auto;
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.contact-us button {
+  background-color: #fff;
+  color: #000;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Animazioni */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+.fade-out {
+  animation: fadeOut 0.4s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+/* AI Chat Button */
+.ai-chat-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--ai-chat-bg);
+  color: #fff;
+  border: none;
+  padding: 1rem 1.5rem;
+  border-radius: 50px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  z-index: 1000;
+  transition: transform 0.2s;
+}
+
+.ai-chat-button:hover {
+  transform: scale(1.05);
+}
