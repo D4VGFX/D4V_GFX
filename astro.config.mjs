@@ -1,5 +1,8 @@
-// @ts-check
 import { defineConfig } from 'astro/config';
+import ghPages from "@astrojs/github";
 
-// https://astro.build/config
-export default defineConfig({});
+export default defineConfig({
+  output: "static",
+  site: "https://d4vgfx.com", // Il tuo dominio personalizzato!
+  integrations: [ghPages()],
+});
