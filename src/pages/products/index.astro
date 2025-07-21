@@ -1,27 +1,31 @@
+---
+import './src/styles/style_products.css';
+---
+// products.astro
+
 <html lang="en-EN">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./css/style_products.css">
         <title>D4V_GFX | Products</title>
-        <link rel="icon" href="./images/logo.png" type="image/png">
+        <link rel="icon" href="../public/assets/logo.png" type="image/png">
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     </head>
         <body>
             <nav>
                 <div>
-                    <a href="index.html">
-                        <img src="./images/logo.png" alt="D4VGFX" class="logonav">
+                    <a href="/home/">
+                        <img src="../public/assets/logo.png" alt="D4VGFX" class="logonav">
                     </a>
                 </div>
                 <div class="navlinks">
-                    <a href="#">D4VGFX Lab</a>
-                    <a href="#">Vision</a>
-                    <a href="#">Products</a>
-                    <a href="#">Payments</a>
-                    <a href="#">Portfolio</a>
-                    <a href="#">Support</a>
+                    <a href="/d4vgfx-lab/">D4VGFX Lab</a>
+                    <a href="/vision/">Vision</a>
+                    <a href="/products/">Products</a>
+                    <a href="/payments/">Payments</a>
+                    <a href="/portfolio/">Portfolio</a>
+                    <a href="/support/">Support</a>
                 </div>
             </nav>
             <section class="section-3">
@@ -31,7 +35,7 @@
 					<div class="products">
 						<a href="#" class="click-card">
 							<div class="card-1">
-								<img src="./images/img1.png" alt="Single Packs" class="img">
+								<img src="../public/assets/img1.png" alt="Single Packs" class="img">
 								<p class="description">Single Packs</p>
 								<div class="btn-group-3">
 									<a href="#" class="inner-btn-1">Learn More</a>
@@ -41,7 +45,7 @@
 						</a>
 						<a href="#" class="click-card">
 							<div class="card-2">
-								<img src="./images/img2.png" alt="Bundle Packs" class="img">
+								<img src="../public/assets//img2.png" alt="Bundle Packs" class="img">
 								<p class="description">Bundle Packs</p>
 								<div class="btn-group-4">
 									<a href="#" class="inner-btn-3">Learn More</a>
@@ -112,7 +116,7 @@
                     </div>
                 </div>
                 <div class="footer-bottom-div">
-                    <p>More ways to shop: <a href="#">Find an Apple Store</a> or other retailer near you. Or call 0800 048 0408.</p>
+                     <p>More ways to shop: <a href="mailto:info@d4vgfx.com" target="_blank" rel="noopener noreferrer">Write us an email</a> or <a href="https://wa.me/393934740930" target="_blank" rel="noopener noreferrer">contact us on WhatsApp</a>.</p>
                 </div>
                 <hr class="line-2">
                 <div class="footer-copyright">
